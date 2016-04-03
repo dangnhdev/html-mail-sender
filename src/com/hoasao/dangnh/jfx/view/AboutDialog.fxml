@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="148.0" prefWidth="386.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/logo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="171.0" layoutY="31.0" />
+      <Text layoutX="160.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Specifically designed for Mrs.Huong kute" wrappingWidth="219.13671875" />
+   </children>
+</AnchorPane>

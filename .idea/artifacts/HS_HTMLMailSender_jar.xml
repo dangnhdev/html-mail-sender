@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HS-HTMLMailSender:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HS_HTMLMailSender_jar</output-path>
+    <root id="archive" name="HS-HTMLMailSender.jar">
+      <element id="module-output" name="HS-HTMLMailSender" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../Common lib/controlsfx-8.40.10/controlsfx-8.40.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../Common lib/log4j/apache-log4j-1.2.17/log4j-1.2.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../Common lib/log4j/commons-logging-1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../Common lib/javamail-1.4.5/javax.mail.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

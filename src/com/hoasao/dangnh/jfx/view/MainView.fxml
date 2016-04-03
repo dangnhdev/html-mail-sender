@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="650.0" prefHeight="700.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hoasao.dangnh.jfx.controller.MainViewController">
+   <children>
+      <WebView fx:id="templateViewer" prefHeight="308.0" prefWidth="650.0" VBox.vgrow="ALWAYS" />
+      <Separator prefWidth="200.0" />
+      <VBox prefHeight="341.0" prefWidth="650.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="650.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" text="File HTML">
+                     <font>
+                        <Font name="Comic Sans MS" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfHtmlPath" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="462.0" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="btChooseHtmlPath" alignment="CENTER" mnemonicParsing="false" onAction="#handleBtChooseHtml" prefHeight="25.0" prefWidth="60.0" text="Chọn">
+                     <font>
+                        <Font name="Comic Sans MS" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="650.0" spacing="15.0">
+               <children>
+                  <Label text="Email">
+                     <font>
+                        <Font name="Comic Sans MS" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfEmail" prefHeight="25.0" prefWidth="175.0" HBox.hgrow="ALWAYS" />
+                  <Label text="Password">
+                     <font>
+                        <Font name="Comic Sans MS" size="12.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="tfPw" onAction="#handleBtLogin" prefWidth="175.0" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="btLogin" mnemonicParsing="false" onAction="#handleBtLogin" prefHeight="25.0" prefWidth="60.0" text="Login" HBox.hgrow="NEVER">
+                     <font>
+                        <Font name="Comic Sans MS" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="650.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="55.0" text="Subject">
+                     <font>
+                        <Font name="Comic Sans MS" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfSubject" prefHeight="34.0" prefWidth="590.0" HBox.hgrow="ALWAYS" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="650.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="55.0" text="From">
+                     <font>
+                        <Font name="Comic Sans MS" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfFrom" prefHeight="34.0" prefWidth="590.0" HBox.hgrow="ALWAYS" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="36.0" prefWidth="650.0" spacing="31.0">
+               <children>
+                  <Label text="To" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Comic Sans MS" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="taSendTo" prefHeight="37.0" prefWidth="580.0" promptText="customer1@example.com;customer2@example.com;customer3@example.com;" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </TextArea>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="650.0" spacing="31.0">
+               <children>
+                  <Label text="CC" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Comic Sans MS" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="taCc" prefHeight="25.0" prefWidth="575.0" promptText="customer1@example.com;customer2@example.com;customer3@example.com;" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </HBox.margin>
+                  </TextArea>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="650.0" spacing="31.0">
+               <children>
+                  <Label text="BCC" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Comic Sans MS" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="taBcc" prefHeight="25.0" prefWidth="575.0" promptText="customer1@example.com;customer2@example.com;customer3@example.com;" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </HBox.margin>
+                  </TextArea>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="650.0">
+               <children>
+                  <Button fx:id="btSend" mnemonicParsing="false" onAction="#handleBtSend" text="Send to All" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Comic Sans MS" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <GridPane prefHeight="7.0" prefWidth="650.0" VBox.vgrow="ALWAYS">
+               <columnConstraints>
+                  <ColumnConstraints halignment="RIGHT" hgrow="ALWAYS" />
+                  <ColumnConstraints fillWidth="false" halignment="RIGHT" hgrow="ALWAYS" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints fillHeight="false" valignment="BOTTOM" vgrow="ALWAYS" />
+               </rowConstraints>
+               <children>
+                  <HBox spacing="10.0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                     <children>
+                        <ProgressBar fx:id="progressBar" opacity="0.0" prefHeight="18.0" prefWidth="174.0" progress="1.0" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="lbStatus" />
+                     </children>
+                  </HBox>
+                  <HBox GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="btAbout" mnemonicParsing="false" onAction="#handleBtAbout" text="About this" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets bottom="1.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="1.0" right="5.0" />
+               </padding>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</VBox>

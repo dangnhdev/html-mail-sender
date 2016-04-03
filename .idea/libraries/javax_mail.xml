@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="javax.mail">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Common lib/javamail-1.4.5/javax.mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Common lib/controlsfx-8.40.10/controlsfx-8.40.10.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="https://javamail.java.net/nonav/docs/api/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
